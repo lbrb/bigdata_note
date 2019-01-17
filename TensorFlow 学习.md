@@ -43,3 +43,28 @@ TensorFlow可以认为是一种编程工具，使用TensorFlow来实现具体的
 
 TensorFlow编程的重点是根据业务需求，使用TensorFlow的API将业务转换为执行图（有向无环图）
 
+可以通过Vairable和assign完成变量的定义和更新。
+
+##### 控制依赖
+
+tf.control_dependencies
+
+通过TensorFlow提供的一组函数来处理不完全依赖的情况下的操作排序问题。
+
+##### TensorFlow设备
+
+为了在执行操作的时候，充分利用计算资源，可以明确指定操作在哪个设备上执行。
+
+一般情况下，不需要指定使用CPU还是GPU，TensorFlow会自动检测。模型情况下，只会使用第一个GPU，所以，在实际编程中，经常需要明确给定使用的CPU和GPU。
+
+
+
+### TensorFlow可视化
+
+tensorboard
+
+##### tensorflow
+
+- FIFOQueue: 先进先出队列
+- RandomShuffleQueue:随机混淆队列
+
